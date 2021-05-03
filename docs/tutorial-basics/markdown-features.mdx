@@ -1,0 +1,78 @@
+---
+sidebar_position: 2
+---
+
+# Markdown Features
+
+Regular Markdown images are supported.
+
+![Docusaurus logo](/img/docusaurus.png)
+
+## Code Blocks
+
+Markdown code blocks are supported with Syntax highlighting.
+
+```jsx title="src/components/HelloWorld.js"
+function HelloWorld() {
+  return <h1>Hello, World!</h1>;
+}
+```
+
+## Admonitions
+
+:::tip My tip
+
+Use this awesome feature option
+
+:::
+
+:::danger Take care
+
+This action is dangerous
+
+:::
+
+## MDX and React Components
+
+```jsx
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      alert(`You clicked the color ${color} with label ${children}`)
+    }}>
+    {children}
+  </span>
+);
+
+This is <Highlight color="#25c2a0">Bazinga green</Highlight> !
+
+This is <Highlight color="#1877F2">Bazinga blue</Highlight> !
+```
+
+export const Highlight = ({ children, color }) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: "20px",
+      color: "#fff",
+      padding: "10px",
+      cursor: "pointer",
+    }}
+    onClick={() => {
+      alert(`You clicked the color ${color} with label ${children}`);
+    }}
+  >
+    {children}
+  </span>
+);
+
+This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
+
+This is <Highlight color="#1877F2">Facebook blue</Highlight> !
