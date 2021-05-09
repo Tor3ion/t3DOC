@@ -6,7 +6,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/ninja-turtle.ico",
   organizationName: "Tor3ion",
   projectName: "t3DOC",
   themeConfig: {
@@ -14,7 +14,7 @@ module.exports = {
       title: "Tor3ion",
       logo: {
         alt: "Tor3ion Logo",
-        src: "img/logo.svg",
+        src: "img/ninja-turtle.svg",
       },
       items: [
         {
